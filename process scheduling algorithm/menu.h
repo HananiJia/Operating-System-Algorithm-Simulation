@@ -6,23 +6,23 @@ int menu_select()
 	int i;
 	do {
 		system("cls");
-		std::cout << "\t\t ¨q¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ö¡õ¡ö¡õ¡ª¡ª¡ª¡ª¡ª¨r\n";
-		std::cout << "\t\t©¦     Operating-System-Algorithm-Simulation     ©¦\n";
-		std::cout << "\t\t¨t¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ö¡õ¡ö¡õ¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¨s\n";
-		std::cout << "\t\t   ©°¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª©´\n";
-		std::cout << "\t\t   ©¦       1. First Come First Served       ©¦\n";
-		std::cout << "\t\t   ©¦                                        ©¦\n";
-		std::cout << "\t\t   ©¦       2. Short Job First               ©¦\n";
-		std::cout << "\t\t   ©¦                                        ©¦\n";
-		std::cout << "\t\t   ©¦       3. Round Robin                   ©¦\n";
-		std::cout << "\t\t   ©¦                                        ©¦\n";
-		std::cout << "\t\t   ©¦       4. Priority Scheduling Algorithm ©¦\n";
-		std::cout << "\t\t   ©¦                                        ©¦\n";
-		std::cout << "\t\t   ©¦       0. Exit                          ©¦\n";
-		std::cout << "\t\t   ©¸¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª©¼\n";
+		std::cout << "\t\t â•­â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â– â–¡â– â–¡â€”â€”â€”â€”â€”â•®\n";
+		std::cout << "\t\tâ”‚     Operating-System-Algorithm-Simulation     â”‚\n";
+		std::cout << "\t\tâ•°â€”â€”â€”â€”â€”â€”â€”â– â–¡â– â–¡â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â•¯\n";
+		std::cout << "\t\t   â”Œâ€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â”\n";
+		std::cout << "\t\t   â”‚       1. First Come First Served       â”‚\n";
+		std::cout << "\t\t   â”‚                                        â”‚\n";
+		std::cout << "\t\t   â”‚       2. Short Job First               â”‚\n";
+		std::cout << "\t\t   â”‚                                        â”‚\n";
+		std::cout << "\t\t   â”‚       3. Round Robin                   â”‚\n";
+		std::cout << "\t\t   â”‚                                        â”‚\n";
+		std::cout << "\t\t   â”‚       4. Priority Scheduling Algorithm â”‚\n";
+		std::cout << "\t\t   â”‚                                        â”‚\n";
+		std::cout << "\t\t   â”‚       0. Exit                          â”‚\n";
+		std::cout << "\t\t   â””â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â”˜\n";
 		std::cout << "\t\tPlease choose(0-4):";
 		std::cin >> i;
-	} while (i < 0 || i>4);
+	} while (i < 0 || i
 	return i;
 }
 
@@ -46,13 +46,13 @@ void OSAlgorithmSimulation()
 			break;
 		case 3:
 			GetPcbs(pcbs);
-			GetRoundTime(roundtime);
+			GetRoundTime(dtime);
 			RR(pcbs, roundtime);
 			break;
 		case 4:
 			GetPcbs(pcbs, 1);	
 			//void GetPcbs(std::vector<pcb>& pcbs,int flag = 0)
-			//µÚ¶ş¸ö²ÎÊıÀ´ÅĞ¶ÏÊÇ·ñĞèÒªÊäÈëÓÅÏÈ¼¶
+			//ç¬¬äºŒä¸ªå‚æ•°æ¥åˆ¤æ–­æ˜¯å¦éœ€è¦è¾“å…¥ä¼˜å…ˆçº§
 			PSA(pcbs);
 			break;
 		case 0:
